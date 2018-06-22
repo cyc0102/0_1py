@@ -18,7 +18,7 @@ for i in range(0, 10):
     # get prediction result
     print(predictions)
 
-#from matplotlib import pyplot as plt
-#plt.imshow(X2.reshape(28,28)*255)
-#plt.show() 
+from matplotlib import pyplot as plt
+plt.imshow(X2.reshape(28,28)*255)
+plt.show() 
 
