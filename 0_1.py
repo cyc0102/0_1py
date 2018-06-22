@@ -1,6 +1,7 @@
 import numpy as np  
 from keras.models import Sequential
 from keras.models import model_from_json
+from matplotlib import pyplot as plt
 
 with open("model.config", "r") as text_file:
     json_string = text_file.read()
@@ -17,8 +18,6 @@ for i in range(0, 10):
     predictions = model.predict_classes(X1)
     # get prediction result
     print(predictions)
-
-from matplotlib import pyplot as plt
-plt.imshow(X2.reshape(28,28)*255)
-plt.show() 
+    plt.imshow(X2.reshape(28,28)*255)
+    plt.show() 
 
